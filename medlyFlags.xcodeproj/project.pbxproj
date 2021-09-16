@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F51D02D26F3789400F6FB16 /* medlyFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D02C26F3789400F6FB16 /* medlyFlagsApp.swift */; };
+		4F51D02F26F3789400F6FB16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D02E26F3789400F6FB16 /* ContentView.swift */; };
+		4F51D03126F3789600F6FB16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F51D03026F3789600F6FB16 /* Assets.xcassets */; };
+		4F51D03426F3789600F6FB16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F51D03326F3789600F6FB16 /* Preview Assets.xcassets */; };
+		4F51D03626F3789600F6FB16 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D03526F3789600F6FB16 /* Persistence.swift */; };
+		4F51D03926F3789600F6FB16 /* medlyFlags.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D03726F3789600F6FB16 /* medlyFlags.xcdatamodeld */; };
+		4F51D04426F3789600F6FB16 /* medlyFlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D04326F3789600F6FB16 /* medlyFlagsTests.swift */; };
+		4F51D04F26F3789600F6FB16 /* medlyFlagsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D04E26F3789600F6FB16 /* medlyFlagsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F51D04026F3789600F6FB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F51D02126F3789400F6FB16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F51D02826F3789400F6FB16;
+			remoteInfo = medlyFlags;
+		};
+		4F51D04B26F3789600F6FB16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F51D02126F3789400F6FB16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F51D02826F3789400F6FB16;
+			remoteInfo = medlyFlags;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F51D02926F3789400F6FB16 /* medlyFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medlyFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F51D02C26F3789400F6FB16 /* medlyFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medlyFlagsApp.swift; sourceTree = "<group>"; };
+		4F51D02E26F3789400F6FB16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F51D03026F3789600F6FB16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F51D03326F3789600F6FB16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F51D03526F3789600F6FB16 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4F51D03826F3789600F6FB16 /* medlyFlags.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = medlyFlags.xcdatamodel; sourceTree = "<group>"; };
+		4F51D03A26F3789600F6FB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F51D03F26F3789600F6FB16 /* medlyFlagsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medlyFlagsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F51D04326F3789600F6FB16 /* medlyFlagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medlyFlagsTests.swift; sourceTree = "<group>"; };
+		4F51D04526F3789600F6FB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F51D04A26F3789600F6FB16 /* medlyFlagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medlyFlagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F51D04E26F3789600F6FB16 /* medlyFlagsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medlyFlagsUITests.swift; sourceTree = "<group>"; };
+		4F51D05026F3789600F6FB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F51D02626F3789400F6FB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D03C26F3789600F6FB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D04726F3789600F6FB16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F51D02026F3789400F6FB16 = {
+			isa = PBXGroup;
+			children = (
+				4F51D02B26F3789400F6FB16 /* medlyFlags */,
+				4F51D04226F3789600F6FB16 /* medlyFlagsTests */,
+				4F51D04D26F3789600F6FB16 /* medlyFlagsUITests */,
+				4F51D02A26F3789400F6FB16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F51D02A26F3789400F6FB16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F51D02926F3789400F6FB16 /* medlyFlags.app */,
+				4F51D03F26F3789600F6FB16 /* medlyFlagsTests.xctest */,
+				4F51D04A26F3789600F6FB16 /* medlyFlagsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F51D02B26F3789400F6FB16 /* medlyFlags */ = {
+			isa = PBXGroup;
+			children = (
+				4F51D02C26F3789400F6FB16 /* medlyFlagsApp.swift */,
+				4F51D02E26F3789400F6FB16 /* ContentView.swift */,
+				4F51D03026F3789600F6FB16 /* Assets.xcassets */,
+				4F51D03526F3789600F6FB16 /* Persistence.swift */,
+				4F51D03A26F3789600F6FB16 /* Info.plist */,
+				4F51D03726F3789600F6FB16 /* medlyFlags.xcdatamodeld */,
+				4F51D03226F3789600F6FB16 /* Preview Content */,
+			);
+			path = medlyFlags;
+			sourceTree = "<group>";
+		};
+		4F51D03226F3789600F6FB16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F51D03326F3789600F6FB16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F51D04226F3789600F6FB16 /* medlyFlagsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F51D04326F3789600F6FB16 /* medlyFlagsTests.swift */,
+				4F51D04526F3789600F6FB16 /* Info.plist */,
+			);
+			path = medlyFlagsTests;
+			sourceTree = "<group>";
+		};
+		4F51D04D26F3789600F6FB16 /* medlyFlagsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F51D04E26F3789600F6FB16 /* medlyFlagsUITests.swift */,
+				4F51D05026F3789600F6FB16 /* Info.plist */,
+			);
+			path = medlyFlagsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F51D02826F3789400F6FB16 /* medlyFlags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F51D05326F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlags" */;
+			buildPhases = (
+				4F51D02526F3789400F6FB16 /* Sources */,
+				4F51D02626F3789400F6FB16 /* Frameworks */,
+				4F51D02726F3789400F6FB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = medlyFlags;
+			productName = medlyFlags;
+			productReference = 4F51D02926F3789400F6FB16 /* medlyFlags.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F51D03E26F3789600F6FB16 /* medlyFlagsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F51D05626F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlagsTests" */;
+			buildPhases = (
+				4F51D03B26F3789600F6FB16 /* Sources */,
+				4F51D03C26F3789600F6FB16 /* Frameworks */,
+				4F51D03D26F3789600F6FB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F51D04126F3789600F6FB16 /* PBXTargetDependency */,
+			);
+			name = medlyFlagsTests;
+			productName = medlyFlagsTests;
+			productReference = 4F51D03F26F3789600F6FB16 /* medlyFlagsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F51D04926F3789600F6FB16 /* medlyFlagsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F51D05926F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlagsUITests" */;
+			buildPhases = (
+				4F51D04626F3789600F6FB16 /* Sources */,
+				4F51D04726F3789600F6FB16 /* Frameworks */,
+				4F51D04826F3789600F6FB16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F51D04C26F3789600F6FB16 /* PBXTargetDependency */,
+			);
+			name = medlyFlagsUITests;
+			productName = medlyFlagsUITests;
+			productReference = 4F51D04A26F3789600F6FB16 /* medlyFlagsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F51D02126F3789400F6FB16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4F51D02826F3789400F6FB16 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					4F51D03E26F3789600F6FB16 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4F51D02826F3789400F6FB16;
+					};
+					4F51D04926F3789600F6FB16 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 4F51D02826F3789400F6FB16;
+					};
+				};
+			};
+			buildConfigurationList = 4F51D02426F3789400F6FB16 /* Build configuration list for PBXProject "medlyFlags" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F51D02026F3789400F6FB16;
+			productRefGroup = 4F51D02A26F3789400F6FB16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F51D02826F3789400F6FB16 /* medlyFlags */,
+				4F51D03E26F3789600F6FB16 /* medlyFlagsTests */,
+				4F51D04926F3789600F6FB16 /* medlyFlagsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F51D02726F3789400F6FB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F51D03426F3789600F6FB16 /* Preview Assets.xcassets in Resources */,
+				4F51D03126F3789600F6FB16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D03D26F3789600F6FB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D04826F3789600F6FB16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F51D02526F3789400F6FB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F51D03626F3789600F6FB16 /* Persistence.swift in Sources */,
+				4F51D02F26F3789400F6FB16 /* ContentView.swift in Sources */,
+				4F51D02D26F3789400F6FB16 /* medlyFlagsApp.swift in Sources */,
+				4F51D03926F3789600F6FB16 /* medlyFlags.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D03B26F3789600F6FB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F51D04426F3789600F6FB16 /* medlyFlagsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F51D04626F3789600F6FB16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F51D04F26F3789600F6FB16 /* medlyFlagsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F51D04126F3789600F6FB16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F51D02826F3789400F6FB16 /* medlyFlags */;
+			targetProxy = 4F51D04026F3789600F6FB16 /* PBXContainerItemProxy */;
+		};
+		4F51D04C26F3789600F6FB16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F51D02826F3789400F6FB16 /* medlyFlags */;
+			targetProxy = 4F51D04B26F3789600F6FB16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F51D05126F3789600F6FB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F51D05226F3789600F6FB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F51D05426F3789600F6FB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"medlyFlags/Preview Content\"";
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = medlyFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlags;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F51D05526F3789600F6FB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"medlyFlags/Preview Content\"";
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = medlyFlags/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlags;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F51D05726F3789600F6FB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				INFOPLIST_FILE = medlyFlagsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlagsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medlyFlags.app/medlyFlags";
+			};
+			name = Debug;
+		};
+		4F51D05826F3789600F6FB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				INFOPLIST_FILE = medlyFlagsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlagsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medlyFlags.app/medlyFlags";
+			};
+			name = Release;
+		};
+		4F51D05A26F3789600F6FB16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				INFOPLIST_FILE = medlyFlagsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlagsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medlyFlags;
+			};
+			name = Debug;
+		};
+		4F51D05B26F3789600F6FB16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR77GZV3WJ;
+				INFOPLIST_FILE = medlyFlagsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecgriffin.medlyFlagsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medlyFlags;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F51D02426F3789400F6FB16 /* Build configuration list for PBXProject "medlyFlags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F51D05126F3789600F6FB16 /* Debug */,
+				4F51D05226F3789600F6FB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F51D05326F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F51D05426F3789600F6FB16 /* Debug */,
+				4F51D05526F3789600F6FB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F51D05626F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlagsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F51D05726F3789600F6FB16 /* Debug */,
+				4F51D05826F3789600F6FB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F51D05926F3789600F6FB16 /* Build configuration list for PBXNativeTarget "medlyFlagsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F51D05A26F3789600F6FB16 /* Debug */,
+				4F51D05B26F3789600F6FB16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4F51D03726F3789600F6FB16 /* medlyFlags.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F51D03826F3789600F6FB16 /* medlyFlags.xcdatamodel */,
+			);
+			currentVersion = 4F51D03826F3789600F6FB16 /* medlyFlags.xcdatamodel */;
+			path = medlyFlags.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F51D02126F3789400F6FB16 /* Project object */;
+}
