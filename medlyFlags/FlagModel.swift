@@ -49,6 +49,39 @@ class PodcastModel : ObservableObject {
     
 }
 
+struct URLImage: View {
+    let urlString: String
+    
+    @State var urlData: Data?
+    
+    var body: some View {
+        if let data = urlData, let uiimage = UIImage(data: data) {
+            Image(uiImage: uiimage)
+                .resizable()
+                .scaledToFit()
+                .frame(height: 80)
+                .cornerRadius(5)
+        } else {
+            Image(systemName: "mic")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 80)
+                .cornerRadius(5)
+                .onAppear {
+                    getData()
+                }
+        }
+    }
+    
+    private func getData() {
+        guard let url = URL(string: urlString) else { return }
+        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+            self.urlData = data
+        }
+        task.resume()
+    }
+}
+
 struct FlagModel_Previews: PreviewProvider {
     static var previews: some View {
         /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/

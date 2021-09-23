@@ -16,12 +16,12 @@ struct FlagListView: View {
         NavigationView {
             List(podcasts.results, id: \.self) { pod in
                 HStack {
-                    KFImage(URL(string: pod.artworkUrl100))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 80)
-                        .cornerRadius(5)
-                    
+                    URLImage(urlString: pod.artworkUrl100)
+//                    KFImage(URL(string: pod.artworkUrl100))
+//                        .resizable()
+//                        .scaledToFit()
+//                        .frame(height: 80)
+//                        .cornerRadius(5)
                 }
                 VStack(alignment: .leading, spacing: 4) {
                     Text(pod.name)
