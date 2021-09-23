@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		4F51D03926F3789600F6FB16 /* medlyFlags.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D03726F3789600F6FB16 /* medlyFlags.xcdatamodeld */; };
 		4F51D04426F3789600F6FB16 /* medlyFlagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D04326F3789600F6FB16 /* medlyFlagsTests.swift */; };
 		4F51D04F26F3789600F6FB16 /* medlyFlagsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D04E26F3789600F6FB16 /* medlyFlagsUITests.swift */; };
+		4F51D05D26F388F300F6FB16 /* FlagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51D05C26F388F300F6FB16 /* FlagModel.swift */; };
+		4FC7A8EA26FBCEDA0096ED86 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4FC7A8E926FBCEDA0096ED86 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		4F51D04A26F3789600F6FB16 /* medlyFlagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medlyFlagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F51D04E26F3789600F6FB16 /* medlyFlagsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medlyFlagsUITests.swift; sourceTree = "<group>"; };
 		4F51D05026F3789600F6FB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F51D05C26F388F300F6FB16 /* FlagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FC7A8EA26FBCEDA0096ED86 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4F51D02C26F3789400F6FB16 /* medlyFlagsApp.swift */,
+				4F51D05C26F388F300F6FB16 /* FlagModel.swift */,
 				4F51D02E26F3789400F6FB16 /* ContentView.swift */,
 				4F51D03026F3789600F6FB16 /* Assets.xcassets */,
 				4F51D03526F3789600F6FB16 /* Persistence.swift */,
@@ -152,6 +157,9 @@
 			dependencies = (
 			);
 			name = medlyFlags;
+			packageProductDependencies = (
+				4FC7A8E926FBCEDA0096ED86 /* Kingfisher */,
+			);
 			productName = medlyFlags;
 			productReference = 4F51D02926F3789400F6FB16 /* medlyFlags.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 4F51D02026F3789400F6FB16;
+			packageReferences = (
+				4FC7A8E826FBCEDA0096ED86 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4F51D02A26F3789400F6FB16 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,6 +279,7 @@
 				4F51D03626F3789600F6FB16 /* Persistence.swift in Sources */,
 				4F51D02F26F3789400F6FB16 /* ContentView.swift in Sources */,
 				4F51D02D26F3789400F6FB16 /* medlyFlagsApp.swift in Sources */,
+				4F51D05D26F388F300F6FB16 /* FlagModel.swift in Sources */,
 				4F51D03926F3789600F6FB16 /* medlyFlags.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FC7A8E826FBCEDA0096ED86 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FC7A8E926FBCEDA0096ED86 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FC7A8E826FBCEDA0096ED86 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4F51D03726F3789600F6FB16 /* medlyFlags.xcdatamodeld */ = {
