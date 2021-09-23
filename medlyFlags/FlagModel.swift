@@ -25,13 +25,11 @@ struct Results: Decodable, Hashable {
 
 class PodcastModel : ObservableObject {
     
-    @Published var items = 0..<10
-    
     @Published var results = [Results]()
     
     init() {
         
-        guard let url = URL(string: "https://rss.itunes.apple.com/api/v1/us/podcasts/top-podcasts/all/50/explicit.json") else { return }
+        guard let url = URL(string: "https://rss.itunes.apple.com/api/v1/us/podcasts/top-podcasts/all/100/explicit.json") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
@@ -39,15 +37,17 @@ class PodcastModel : ObservableObject {
                 let podcastData = try JSONDecoder().decode(RSS.self, from: data)
                 DispatchQueue.main.async {
                     print(podcastData)
+                    print("results count \(podcastData.feed.results.count)")
                     self.results = podcastData.feed.results
+                    print(self.results)
                 }
             }catch{
                 print("failed podcast urlsession \(error)")
             }
         }.resume()
     }
-    
 }
+
 
 struct URLImage: View {
     let urlString: String
@@ -81,6 +81,27 @@ struct URLImage: View {
         task.resume()
     }
 }
+
+//struct FlagImage: View {
+//
+//    let alpha2Code: String
+//
+//    @State var flagURLData: Data?
+//
+//    var body: some View{
+//
+//    }
+//
+//    private func getData() {
+//        guard let flagURL = "https://www.countryflags.io/\()/flat/64.png`"
+//        let task = URLSession.shared.dataTask(with: flagURL) {data, _, _ in
+//            self.flagURLData = data
+//        }
+//        .resume()
+//    }
+//
+//}
+
 
 struct FlagModel_Previews: PreviewProvider {
     static var previews: some View {

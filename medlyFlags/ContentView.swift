@@ -8,9 +8,20 @@
 import SwiftUI
 import Kingfisher
 
+//struct PodView: View {
+//
+//    @ObservedObject var podcasts = PodcastModel()
+//
+//    var body: some View {
+//
+//    }
+//
+//}
+
 struct FlagListView: View {
     
     @ObservedObject var podcasts = PodcastModel()
+    
     
     var body: some View{
         NavigationView {
@@ -32,10 +43,15 @@ struct FlagListView: View {
                         .font(.subheadline)
                         .foregroundColor(.red)
                 }
-                
-                Link(destination: pod.url, label: {
+                NavigationLink(
                     
-                })
+//                    destination: PodView(),
+//                    label: {
+//                    })
+                
+//                Link(destination: pod.url, label: {
+//
+//                })
                 .frame(width: 0.1)
             }
             .navigationTitle("Top 100 Podcasts")
