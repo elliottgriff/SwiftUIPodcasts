@@ -59,7 +59,6 @@ struct URLImage: View {
             Image(uiImage: uiimage)
                 .resizable()
                 .scaledToFit()
-                .frame(height: 80)
                 .cornerRadius(5)
         } else {
             Image(systemName: "mic")
